@@ -39,3 +39,39 @@ header {
 .departures table td {
   height: 50px;
 }
+
+#time {
+  width: 160px;
+}
+
+#destination {
+  width: 290px;
+}
+
+#flight {
+  width: 205px;
+}
+
+#gate {
+  width: 135px;
+}
+
+#remarks {
+  width: 285px;
+}
+
+.flip {
+  animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
