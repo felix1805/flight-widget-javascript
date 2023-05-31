@@ -77,7 +77,7 @@ function generateRandomLetter() {
 function generateRandomNumber(maxNumber) {
   const numbers = '0123456789'
   if (maxNumber) {
-    const newNumbers = numbers.slice(0, maxNumber)
+    const newNumbers = numbers.slice(0, maxNumber + 1)
     return newNumbers.charAt(Math.floor(Math.random() * newNumbers.length))
   }
   return numbers.charAt(Math.floor(Math.random() * numbers.length))
@@ -113,4 +113,4 @@ function shuffleUp() {
   populateTable()
 }
 
-setInterval(shuffleUp, 2000)
+setInterval(shuffleUp, 4000)
